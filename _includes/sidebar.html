@@ -1,0 +1,53 @@
+{% if site.avatar -%}
+  <div class="sidebar-section">
+    {%- if site.avatar contains "://" -%}
+      {%- assign avatar = site.avatar -%}
+    {%- else -%}
+      {%- assign avatar = site.avatar | relative_url -%}
+    {%- endif -%}
+    <img src="{{ avatar }}" class="author-avatar u-photo align-center" alt="{{ site.author | escape }}">
+  </div>
+{%- endif %}
+
+<div class="sidebar-section">
+  <ul class="contact-list">
+    {% if site.author -%}
+      <li>
+        <i class="sidebar-icon fas fa-at"></i>
+        <span class="contact-info p-name">{{ site.author | escape }}</span>
+      </li>
+    {%- endif %}
+    {% if site.email -%}
+      <li>
+        <a class="contact-info u-email" href="mailto:{{ site.email | escape }}" title="{{ site.email | escape }}">
+          <i class="sidebar-icon fas fa-envelope"></i>
+        </a>
+      </li>
+    {%- endif %}
+    {% if site.google_scholar -%}
+      <li>
+        <a class="contact-info" href="{{ site.google_scholar | escape }}" target="_blank" rel="noopener noreferrer" title="Google Scholar">
+          <i class="sidebar-icon fas fa-graduation-cap"></i>
+        </a>
+      </li>
+    {%- endif %}
+    {% if site.location -%}
+      <li>
+        <i class="sidebar-icon fas fa-location-arrow"></i>
+        <a class="contact-info u-location" href="https://www.google.com/maps/search/{{ site.location | url_encode }}">{{ site.location | escape }}</a>
+      </li>
+    {%- endif %}
+  </ul>
+</div>
+
+{% if site.data.social -%}
+  <div class="sidebar-section">
+    <ul class="social-icons">
+      {% for social in site.data.social -%}
+        <li>
+          <a class="social-icon" href="{{ social.url | escape }}"><i class="{{ social.icon | default: 'fas fa-link' | escape }} fa-2x" title="{{ social.title | escape }}"></i></a>
+        </li>
+      {%- endfor %}
+    </ul>
+  </div>
+{%- endif %}
