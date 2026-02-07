@@ -1,0 +1,36 @@
+# GitHub Pages + jekyll-theme-hamilton
+# https://github.com/ngzhio/jekyll-theme-hamilton
+
+# リポジトリが username.github.io の場合は baseurl: ""
+# それ以外（例: website）の場合は baseurl: "/website"
+baseurl: "/website"
+url: "https://seishiroono.github.io"
+
+title: My Site
+author: ""
+email: ""
+description: "A minimal and beautiful site built with Hamilton."
+
+# GitHub Pages では jekyll-remote-theme を使用
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+remote_theme: ngzhio/jekyll-theme-hamilton
+
+# コメント（Disqus）を使う場合は shortname を設定
+# disqus: your-disqus-shortname
+
+# Google Analytics を使う場合は ID を設定
+# google_analytics: G-XXXXXXXXXX
+
+# オプション
+lang: ja
+paginate: 10
+date_format: "%Y年%-m月%-d日"
+subscribe: true
+
+# スキン: daylight, midnight, sunrise, sunset（未設定なら時間帯で自動）
+# skin: daylight
