@@ -26,5 +26,5 @@ remote_theme: ngzhio/jekyll-theme-hamilton
 lang: en
 paginate: 10
 date_format: "%Y-%m-%d"
-subscribe: true
+#subscribe: true
 
