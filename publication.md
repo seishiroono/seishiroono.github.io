@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Publication
+permalink: /publication/
 ---
 
 このサイトは [Hamilton](https://github.com/ngzhio/jekyll-theme-hamilton) テーマを使った GitHub Pages のサイトです。
