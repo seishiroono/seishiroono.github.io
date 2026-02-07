@@ -1,13 +1,13 @@
 # GitHub Pages + jekyll-theme-hamilton
 # https://github.com/ngzhio/jekyll-theme-hamilton
 
-# リポジトリが username.github.io の場合は baseurl: ""
-# それ以外（例: website）の場合は baseurl: "/website"
-baseurl: "/website"
+# ユーザーサイト (seishiroono.github.io) はルートで表示されるため baseurl は空
+# プロジェクトサイトの場合は baseurl: "/リポジトリ名"
+baseurl: ""
 url: "https://seishiroono.github.io"
 
 title: My Site
-author: ""
+author: "My Site"
 email: ""
 description: "A minimal and beautiful site built with Hamilton."
 
