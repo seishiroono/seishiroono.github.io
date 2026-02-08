@@ -18,8 +18,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Helvetica, Arial, sans-serif !important;
 }
 
-// ページ幅を制限（ナビが右に寄りすぎないように）
-$content-max-width: 720px;
+// ページ幅: ブラウザ幅に応じて自動調整（最小 320px、最大 1100px、それ以外は 90vw）
+$content-max-width: clamp(320px, 90vw, 1100px);
 
 .site-header-wrapper,
 body > .wrapper:first-of-type {
