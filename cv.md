@@ -41,14 +41,14 @@ permalink: /cv/
     <section>
     <h3>Grants</h3>
     <ul>
-        <li><span class="date">Apr. 2025 - Mar. 2028 </span>  Grant-in-Aid for Early-Career Scientists</li> <br>
-        4,940,000 JPY
-        <li><span class="date">Oct. 2023 - Mar. 2025 </span>  Grant-in-Aid for Research Activity Start-up</li> <br>
-        2,860,000 JPY
-        <li><span class="date">Apr. 2023 - Mar. 2026 </span>  RIKEN Special Postdoctoral Researcher Fellow</li> <br>
-        3,000,000 JPY
-        <li><span class="date">Apr. 2020 - Mar. 2023 </span>  Japan Physical Society Grant-in-Aid for JSPS Fellow</li> <br>
-        3,400,000 JPY
+        <li><span class="date">Apr. 2025 - Mar. 2028 </span>  Grant-in-Aid for Early-Career Scientists <br> 4,940,000 JPY
+        </li> 
+        <li><span class="date">Oct. 2023 - Mar. 2025 </span>  Grant-in-Aid for Research Activity Start-up <br>
+        2,860,000 JPY</li>
+        <li><span class="date">Apr. 2023 - Mar. 2026 </span>  RIKEN Special Postdoctoral Researcher Fellow <br>
+        3,000,000 JPY</li>
+        <li><span class="date">Apr. 2020 - Mar. 2023 </span>  Japan Physical Society Grant-in-Aid for JSPS Fellow <br>
+        3,400,000 JPY</li>
     </ul>
     </section>
 </div>
