@@ -1,0 +1,9 @@
+{% if site.author %}
+Copyright © {{ site.time | date: '%Y' }} {{ site.author | escape }}; All rights reserved.
+{% endif %}
+
+Powered by Jekyll & Hamilton
+
+{% if site.description %}
+{{ site.description | escape }}
+{% endif %}
