@@ -51,7 +51,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 0;
 }
 
-// ORCID logo icon in sidebar (SVG) — inherits link color for light/dark theme
+// ORCID iD icon in sidebar (official shape, currentColor for theme adaptation)
 .orcid-link .orcid-icon {
   display: inline-block;
   vertical-align: middle;
