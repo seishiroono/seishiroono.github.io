@@ -8,8 +8,8 @@ permalink: /cv/
     <section>
     <h3>Employment</h3>
     <ul>
-        <li><span class="date">Sep. 2025 - </span>Research Associate, Institute for Solid State Physics, University of Tokyo</li>
-        <li><span class="date">Apr. 2023 - Aug. 2025</span>Special Postdoctoral Researcher, Center for Interdisciplinary Theoretical and Mathematical Science, RIKEN</li>
+        <li><span class="date">Sep. 2025 - </span> Research Associate, Institute for Solid State Physics, University of Tokyo</li>
+        <li><span class="date">Apr. 2023 - Aug. 2025 </span> Special Postdoctoral Researcher, Center for Interdisciplinary Theoretical and Mathematical Science, RIKEN</li>
     </ul>
     </section>
     <section>
