@@ -20,12 +20,14 @@ plugins:
   - jekyll-scholar
 
 # jekyll-scholar: Publication ページで BibTeX 文献リストを表示
+# style: 組み込み名（apa 等）。カスタム CSL を使う場合は csl: にファイルパスを指定（_plugins/scholar_csl.rb が style に反映する）
 scholar:
   source: ./_bibliography
   bibliography: references.bib
   sort_by: year
   order: descending
   style: apa
+  csl: _csl/apa-author-given-family-full.csl
   locale: en
   bibliography_template: '{% if entry.url %}<a href="{{ entry.url | escape }}" target="_blank" rel="noopener noreferrer">{{ reference }}</a>{% else %}{{ reference }}{% endif %}'
 

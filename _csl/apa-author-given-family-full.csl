@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" class="in-text" version="1.0" default-locale="en">
+  <info>
+    <title>APA-style with author as Given Family (full names)</title>
+    <id>apa-author-given-family-full</id>
+    <updated>2026-02-08</updated>
+  </info>
+  <macro name="author">
+    <names variable="author">
+      <name form="long" delimiter-precedes-last="always" and="symbol">
+        <name-part name="given"/>
+        <name-part name="family"/>
+      </name>
+      <label form="short" prefix=" (" suffix=")" text-case="capitalize-first"/>
+      <substitute>
+        <names variable="editor"/>
+        <text variable="publisher"/>
+        <text variable="title"/>
+      </substitute>
+    </names>
+  </macro>
+  <macro name="date">
+    <group prefix="(" suffix=")">
+      <date variable="issued" form="numeric" date-parts="year"/>
+    </group>
+  </macro>
+  <macro name="title">
+    <choose>
+      <if type="article-journal article-magazine article-newspaper">
+        <text variable="title"/>
+      </if>
+      <else-if type="book report thesis">
+        <text variable="title" font-style="italic"/>
+      </else-if>
+      <else>
+        <text variable="title" font-style="italic"/>
+      </else>
+    </choose>
+  </macro>
+  <macro name="container">
+    <group delimiter=", ">
+      <text variable="container-title" font-style="italic"/>
+      <group delimiter=" ">
+        <text variable="volume"/>
+        <text variable="issue" prefix="(" suffix=")"/>
+        <text variable="page"/>
+      </group>
+    </group>
+  </macro>
+  <macro name="bibliography">
+    <group delimiter=". ">
+      <text macro="author"/>
+      <text macro="date"/>
+      <text macro="title"/>
+      <text macro="container"/>
+    </group>
+  </macro>
+  <citation>
+    <layout>
+      <group delimiter=", ">
+        <text macro="author"/>
+        <text macro="date"/>
+      </group>
+    </layout>
+  </citation>
+  <bibliography>
+    <sort>
+      <key variable="citation-number"/>
+    </sort>
+    <layout>
+      <text macro="bibliography"/>
+    </layout>
+  </bibliography>
+</style>
