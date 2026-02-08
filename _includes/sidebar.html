@@ -27,8 +27,8 @@
     {%- endif %}
     {% if site.orcid -%}
       <li>
-        <a class="contact-info" href="{{ site.orcid | escape }}" target="_blank" rel="noopener noreferrer" title="ORCID">
-          <i class="sidebar-icon fab fa-orcid"></i>
+        <a class="contact-info orcid-link" href="{{ site.orcid | escape }}" target="_blank" rel="noopener noreferrer" title="ORCID">
+          <svg class="sidebar-icon orcid-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em" aria-hidden="true"><path d="M12 0C5.385 0 0 5.385 0 12s5.385 12 12 12 12-5.385 12-12S18.615 0 12 0zm-2.364 5.455h2.364v2.364H9.636V5.455zm0 4.727h2.364v8.727H9.636v-8.727zm4.728 0h2.364v8.727h-2.364v-8.727zm0-4.727h2.364v2.364h-2.364V5.455z"/></svg>
         </a>
       </li>
     {%- endif %}
