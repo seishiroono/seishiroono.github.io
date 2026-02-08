@@ -34,3 +34,19 @@ h1, h2, h3, h4, h5, h6 {
   border: none !important;
   border-bottom: none !important;
 }
+
+// Theme toggle (day/night) in sidebar
+.theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: inherit;
+  font-size: 1.25rem;
+}
+.theme-toggle:hover {
+  opacity: 0.8;
+}
+.theme-toggle .sidebar-icon {
+  margin-right: 0;
+}
