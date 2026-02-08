@@ -16,6 +16,16 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jekyll-scholar
+
+# jekyll-scholar: Publication ページで BibTeX 文献リストを表示
+scholar:
+  source: ./_bibliography
+  bibliography: references.bib
+  sort_by: year
+  order: descending
+  style: apa
+  locale: en
 
 remote_theme: ngzhio/jekyll-theme-hamilton
 
