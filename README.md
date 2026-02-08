@@ -5,8 +5,8 @@
 ## 公開手順
 
 1. このリポジトリを GitHub にプッシュする
-2. リポジトリの **Settings → Pages** で：
-   - **Source**: **GitHub Actions**（`jekyll-scholar` を使うため、ブランチではなく Actions でビルドします）
+2. リポジトリの **Settings → Pages → Build and deployment** で：
+   - **Source** を **「GitHub Actions」** に設定する（必須。ブランチからだと `jekyll-scholar` が使えず `Unknown tag 'bibliography'` が出ます）
    - 初回は `.github/workflows/jekyll-pages.yml` が実行され、ビルド＆デプロイされます
 3. 数分後に次の URL で表示されます：
    - リポジトリ名が `username.github.io` の場合: `https://username.github.io`

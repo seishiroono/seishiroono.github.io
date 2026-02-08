@@ -38,21 +38,46 @@
     </choose>
   </macro>
   <macro name="container">
-    <group delimiter=", ">
-      <text variable="container-title" font-style="italic"/>
-      <group delimiter=" ">
-        <text variable="volume"/>
-        <text variable="issue" prefix="(" suffix=")"/>
-        <text variable="page"/>
-      </group>
-    </group>
+    <choose>
+      <if type="misc" variable="archive_location">
+        <group delimiter=": ">
+          <choose>
+            <if variable="archive">
+              <text variable="archive"/>
+            </if>
+            <else>
+              <text value="arXiv"/>
+            </else>
+          </choose>
+          <text variable="archive_location"/>
+        </group>
+      </if>
+      <else-if type="misc" variable="archive">
+        <text variable="archive"/>
+      </else-if>
+      <else-if type="misc" variable="number">
+        <text variable="number" prefix="arXiv:"/>
+      </else-if>
+      <else>
+        <group delimiter=", ">
+          <text variable="container-title" font-style="italic"/>
+          <group delimiter=" ">
+            <text variable="volume"/>
+            <text variable="issue" prefix="(" suffix=")"/>
+            <text variable="page"/>
+          </group>
+        </group>
+      </else>
+    </choose>
   </macro>
   <macro name="bibliography">
     <group delimiter=". ">
       <text macro="author"/>
-      <text macro="date"/>
       <text macro="title"/>
-      <text macro="container"/>
+      <group delimiter=" ">
+        <text macro="container"/>
+        <text macro="date"/>
+      </group>
     </group>
   </macro>
   <citation>

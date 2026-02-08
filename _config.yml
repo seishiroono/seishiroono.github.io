@@ -29,7 +29,7 @@ scholar:
   style: apa
   csl: _csl/apa-author-given-family-full.csl
   locale: en
-  bibliography_template: '{% if entry.url %}<a href="{{ entry.url | escape }}" target="_blank" rel="noopener noreferrer">{{ reference }}</a>{% else %}{{ reference }}{% endif %}'
+  bibliography_template: '{{ reference }}{% if entry.url %} <a href="{{ entry.url | escape }}" target="_blank" rel="noopener noreferrer">[link]</a>{% endif %}'
 
 remote_theme: ngzhio/jekyll-theme-hamilton
 
