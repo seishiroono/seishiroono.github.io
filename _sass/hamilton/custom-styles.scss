@@ -4,7 +4,9 @@ body {
   font-family: Helvetica, Arial, sans-serif !important;
 }
 
-// Publication ページのフォントを Helvetica に統一
+// CV ページのフォントを Helvetica に統一
+.container,
+.container *,
 .publication-content,
 .publication-content ol,
 .publication-content li,
@@ -16,7 +18,60 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Helvetica, Arial, sans-serif !important;
 }
 
-// Remove underline and border from navigation (Home, About)
+// Header: title left, nav right (classic style)
+.site-header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.header-theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.25rem;
+  color: inherit;
+  font-size: 1.1rem;
+}
+.header-theme-toggle:hover {
+  opacity: 0.8;
+}
+
+// Nav as icons only (no hamburger, no text)
+.site-nav .nav-trigger,
+.site-nav .menu-icon {
+  display: none !important;
+}
+.site-nav-icons .trigger {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 0.75rem;
+}
+.site-nav-icons .trigger li {
+  margin: 0;
+}
+.site-nav-icons .nav-icon-link,
+.site-nav-icons .trigger a {
+  text-decoration: none !important;
+  border: none !important;
+  font-size: 1.1rem;
+  color: inherit;
+}
+.site-nav-icons .nav-icon-link:hover,
+.site-nav-icons .trigger a:hover {
+  opacity: 0.8;
+}
+
+// Legacy nav style (border/underline remove)
 .site-nav {
   border: none !important;
 }
@@ -94,13 +149,4 @@ h1, h2, h3, h4, h5, h6 {
 }
 .profile-list li {
   margin-bottom: 0.25rem;
-}
-.profile-theme {
-  margin-top: 1.5rem;
-}
-.profile-theme .theme-toggle {
-  font-size: 1rem;
-}
-.profile-theme .theme-toggle-label {
-  margin-left: 0.25rem;
 }
