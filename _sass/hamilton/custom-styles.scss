@@ -49,6 +49,15 @@ body > .wrapper:first-of-type {
   padding-right: 1rem;
   box-sizing: border-box;
 }
+
+.site-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+}
+.site-footer .page-content-wrapper {
+  padding-top: 0;
+  padding-bottom: 1rem;
+}
 header .site-title,
 .site-header-wrapper .site-title,
 body > .wrapper .site-title {
