@@ -18,13 +18,26 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Helvetica, Arial, sans-serif !important;
 }
 
-// Header: title left, nav right (classic style)
-.site-header-wrapper {
-  display: flex;
+// Header: タイトル左上、ナビ右上（従来スタイル）
+.site-header-wrapper,
+body > .wrapper:first-of-type {
+  display: flex !important;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 0.5rem;
+  text-align: left !important;
+  width: 100% !important;
+  max-width: 100%;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+header .site-title,
+.site-header-wrapper .site-title,
+body > .wrapper .site-title {
+  text-align: left !important;
+  margin-right: 0 !important;
+  margin-left: 0 !important;
 }
 .header-left {
   display: flex;
@@ -43,31 +56,28 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.8;
 }
 
-// Nav as icons only (no hamburger, no text)
+// ナビゲーション: 文字リンク、右寄せ（ハンバーガー非表示）
 .site-nav .nav-trigger,
 .site-nav .menu-icon {
   display: none !important;
 }
-.site-nav-icons .trigger {
-  display: flex;
+.site-header-wrapper .site-nav .trigger {
+  display: flex !important;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 0.75rem;
+  gap: 1rem;
 }
-.site-nav-icons .trigger li {
+.site-header-wrapper .site-nav .trigger li {
   margin: 0;
 }
-.site-nav-icons .nav-icon-link,
-.site-nav-icons .trigger a {
+.site-header-wrapper .site-nav .trigger a {
   text-decoration: none !important;
   border: none !important;
-  font-size: 1.1rem;
   color: inherit;
 }
-.site-nav-icons .nav-icon-link:hover,
-.site-nav-icons .trigger a:hover {
+.site-header-wrapper .site-nav .trigger a:hover {
   opacity: 0.8;
 }
 
@@ -106,8 +116,9 @@ h1, h2, h3, h4, h5, h6 {
   margin-right: 0;
 }
 
-// ORCID iD icon in sidebar (official shape, currentColor for theme adaptation)
-.orcid-link .orcid-icon {
+// ORCID iD icon (official shape, currentColor for theme adaptation)
+.orcid-link .orcid-icon,
+.profile-content .orcid-icon {
   display: inline-block;
   vertical-align: middle;
   font-size: 1.25rem;
@@ -149,4 +160,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 .profile-list li {
   margin-bottom: 0.25rem;
+}
+
+// Contact / Links をアイコンのみ表示
+.profile-list-icons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.profile-list-icons li {
+  margin-bottom: 0;
+}
+.profile-icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+  text-decoration: none !important;
+  font-size: 1.25rem;
+}
+.profile-icon-link:hover {
+  opacity: 0.8;
+}
+.profile-content .orcid-icon {
+  font-size: 1.25rem;
+  width: 1em;
+  height: 1em;
 }
