@@ -9,23 +9,16 @@
     <p class="profile-avatar"><img src="{{ avatar }}" class="author-avatar u-photo" alt="{{ site.author | escape }}"></p>
   {%- endif %}
 
-  {% if site.email -%}
-  <section class="profile-section">
-    <h3 class="profile-heading">Contact</h3>
+  {% if site.email or site.google_scholar or site.orcid or site.location or site.data.social -%}
+  <div class="profile-icons-centered">
     <ul class="profile-list profile-list-icons">
-      <li>
-        <a class="profile-icon-link u-email" href="mailto:{{ site.email | escape }}" title="{{ site.email | escape }}" aria-label="{{ site.email | escape }}">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-    </ul>
-  </section>
-  {%- endif %}
-
-  {% if site.google_scholar or site.orcid or site.location or site.data.social -%}
-  <section class="profile-section">
-    <h3 class="profile-heading">Links</h3>
-    <ul class="profile-list profile-list-icons">
+      {% if site.email -%}
+        <li>
+          <a class="profile-icon-link u-email" href="mailto:{{ site.email | escape }}" title="{{ site.email | escape }}" aria-label="{{ site.email | escape }}">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </li>
+      {%- endif %}
       {% if site.google_scholar -%}
         <li>
           <a class="profile-icon-link" href="{{ site.google_scholar | escape }}" target="_blank" rel="noopener noreferrer" title="Google Scholar" aria-label="Google Scholar">
@@ -57,6 +50,6 @@
         {%- endfor %}
       {%- endif %}
     </ul>
-  </section>
+  </div>
   {%- endif %}
 </div>

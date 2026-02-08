@@ -162,11 +162,17 @@ body > .wrapper .site-title {
   margin-bottom: 0.25rem;
 }
 
-// Contact / Links をアイコンのみ表示
-.profile-list-icons {
+// Contact / Links を中央揃えのアイコン1行で表示
+.profile-icons-centered {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5rem;
+}
+.profile-icons-centered .profile-list-icons {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  justify-content: center;
+  gap: 1.25rem;
 }
 .profile-list-icons li {
   margin-bottom: 0;
@@ -177,13 +183,13 @@ body > .wrapper .site-title {
   justify-content: center;
   color: inherit;
   text-decoration: none !important;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
 }
 .profile-icon-link:hover {
   opacity: 0.8;
 }
 .profile-content .orcid-icon {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   width: 1em;
   height: 1em;
 }
