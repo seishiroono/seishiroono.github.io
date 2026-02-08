@@ -29,4 +29,16 @@ permalink: /cv/
         </li>
     </ul>
     </section>
+    <section>
+    <h3>Awards</h3>
+    <ul>
+        <li><span class="date">Mar. 2026</span>Young Scientist Award of the Physical Society of Japan, The Physical Society of Japan, Japan</li>
+        <li><span class="date">Aug. 2024</span>Best Poster Award of the Conference of Condensed Matter Physics The Conference of Condensed Matter Physics, Liyang, China</li>
+        <li><span class="date">Sep. 2023</span>High Temperature Superconductivity Forum Young Scientist Research Award, High Temperature Superconductivity Forum, Japan</li>
+        <li><span class="date">Mar. 2023</span>Springer Theses (Recognizing Outstanding Ph.D. Research), Springer</li>
+        <li><span class="date">Mar. 2023</span>Dean’s Award of Faculty of Engineering The University of Tokyo, Japan</li>
+        <li><span class="date">Sep. 2021</span>Student Presentation Award of the Physical Society of Japan The Physical Society of Japan, Japan</li>
+        <li><span class="date">Mar. 2020</span>The School of Science Encouragement Award (Dean’s Award of School of Science) The University of Tokyo, Japan</li>
+    </ul>
+    </section>
 </div>
