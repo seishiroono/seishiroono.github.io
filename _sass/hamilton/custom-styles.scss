@@ -18,7 +18,9 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Helvetica, Arial, sans-serif !important;
 }
 
-// Header: タイトル左上、ナビ右上（従来スタイル）
+// ページ幅を制限（ナビが右に寄りすぎないように）
+$content-max-width: 720px;
+
 .site-header-wrapper,
 body > .wrapper:first-of-type {
   display: flex !important;
@@ -28,9 +30,24 @@ body > .wrapper:first-of-type {
   gap: 0.5rem;
   text-align: left !important;
   width: 100% !important;
-  max-width: 100%;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
+  max-width: $content-max-width;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
+}
+
+.page-main {
+  width: 100%;
+}
+.page-content-wrapper {
+  max-width: $content-max-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  box-sizing: border-box;
 }
 header .site-title,
 .site-header-wrapper .site-title,
