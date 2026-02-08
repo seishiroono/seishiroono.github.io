@@ -14,6 +14,7 @@ google_scholar: "https://scholar.google.co.jp/citations?user=TNFITl4AAAAJ&hl=en"
 plugins:
   - jekyll-remote-theme
   - jekyll-feed
+  - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-scholar
