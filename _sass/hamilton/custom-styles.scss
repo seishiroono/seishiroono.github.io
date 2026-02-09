@@ -214,8 +214,7 @@ body > .wrapper .site-title {
 .profile-icon-link:hover {
   opacity: 0.8;
 }
-.profile-content .orcid-icon {
-  font-size: 1.5rem;
-  width: 1em;
-  height: 1em;
+/* Academicons (ai) は Font Awesome と同じメトリクスでサイズ継承 */
+.profile-icon-link .ai {
+  font-size: 1em;
 }
