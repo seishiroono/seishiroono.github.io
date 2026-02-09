@@ -54,14 +54,14 @@
     if (href == null) return;
     link.href = href;
     try { localStorage.setItem(STORAGE_KEY, isDark ? 'dark' : 'light'); } catch (e) {}
-    var btn = document.getElementById('theme-toggle');
-    if (btn) {
-      var icon = btn.querySelector('i');
-      if (icon) {
-        icon.classList.remove('fa-moon', 'fa-sun');
-        icon.classList.add(isDark ? 'fa-sun' : 'fa-moon');
-      }
-    }
+    requestAnimationFrame(function() { updateThemeIcon(isDark); });
+  }
+
+  function updateThemeIcon(isDark) {
+    var icon = document.querySelector('#theme-toggle i');
+    if (!icon) return;
+    icon.classList.remove('fa-moon', 'fa-sun');
+    icon.classList.add(isDark ? 'fa-sun' : 'fa-moon');
   }
 
   function applyStoredTheme() {
@@ -74,8 +74,7 @@
     } catch (e) {}
     var link = getSkinLink();
     if (link && link.href.indexOf('midnight') !== -1) {
-      var icon = document.querySelector('#theme-toggle i');
-      if (icon) { icon.classList.remove('fa-moon'); icon.classList.add('fa-sun'); }
+      updateThemeIcon(true);
     }
   }
 
