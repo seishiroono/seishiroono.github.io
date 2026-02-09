@@ -153,6 +153,18 @@ body > .wrapper .site-title {
   fill: currentColor;
 }
 
+// ホーム本文前の画像（index.html で使用）
+.home-intro-image-wrap {
+  margin-bottom: 1.5rem;
+}
+.home-intro-image {
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
 // Profile content on home (Contact, Links, theme toggle)
 .profile-content {
   margin-top: 2rem;
