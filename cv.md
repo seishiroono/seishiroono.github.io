@@ -41,6 +41,8 @@ permalink: /cv/
     <section>
     <h3>Grants</h3>
     <ul>
+        <li><span class="date">Oct. 2026 - Mar. 2030 </span> Japan Science and Technology PRESTO (Principal Investigator), 32,000,000 JPY
+        </li>
         <li><span class="date">Apr. 2025 - Mar. 2028 </span>  Grant-in-Aid for Early-Career Scientists (Principal Investigator), 4,940,000 JPY
         </li>
         <li><span class="date">Oct. 2023 - Mar. 2025 </span>  Grant-in-Aid for Research Activity Start-up (Principal Investigator), 2,860,000 JPY</li>
